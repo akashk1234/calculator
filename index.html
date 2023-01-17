@@ -13,41 +13,43 @@
     <div class="container bg-light p-3 mt-5 rounded box ">
         <h1 class="text-dark text-center fs-3">CALCULATOR</h1>
         <div>
-            <input type="text" class="form-control">
+            <input id="result" type="text" class="form-control">
         </div>
         
         <div class="row mt-4 ms-1">
-            <div class="col-3"><button type="button" class="btn btn-outline-secondary">7</button></div>
-            <div class="col-3"><button type="button" class="btn btn-outline-secondary">8</button></div>             
-            <div class="col-3"><button type="button" class="btn btn-outline-secondary">9</button></div>
-            <div class="col-3"><button type="button" class="btn btn-outline-secondary">/</button></div>
+            <div class="col-3"><button onclick="displaydata(7)" type="button" class="btn btn-outline-secondary border border-4">7</button></div>
+            <div class="col-3"><button onclick="displaydata(8)" type="button" class="btn btn-outline-secondary border border-4">8</button></div>             
+            <div class="col-3"><button onclick="displaydata(9)" type="button" class="btn btn-outline-secondary border border-4">9</button></div>
+            <div class="col-3"><button onclick="displaydata('/')" type="button" class="btn btn-outline-secondary border border-4">/</button></div>
         </div>
 
         <div class="row mt-4 ms-1">
-            <div class="col-3"><button type="button" class="btn btn-outline-secondary">4</button></div>
-            <div class="col-3"><button type="button" class="btn btn-outline-secondary">5</button></div>
-            <div class="col-3"><button type="button" class="btn btn-outline-secondary">6</button></div>
-            <div class="col-3"><button type="button" class="btn btn-outline-secondary">*</button></div>
+            <div class="col-3"><button onclick="displaydata(4)" type="button" class="btn btn-outline-secondary border border-4">4</button></div>
+            <div class="col-3"><button onclick="displaydata(5)" type="button" class="btn btn-outline-secondary border border-4">5</button></div>
+            <div class="col-3"><button onclick="displaydata(6)" type="button" class="btn btn-outline-secondary border border-4">6</button></div>
+            <div class="col-3"><button onclick="displaydata('*')" type="button" class="btn btn-outline-secondary border border-4">*</button></div>
         </div>
 
         <div class="row mt-4 ms-1">
-            <div class="col-3"><button type="button" class="btn btn-outline-secondary">1</button></div>
-            <div class="col-3"><button type="button" class="btn btn-outline-secondary">2</button></div>
-            <div class="col-3"><button type="button" class="btn btn-outline-secondary">3</button></div>
-            <div class="col-3"><button type="button" class="btn btn-outline-secondary">-</button></div>
+            <div class="col-3"><button onclick="displaydata(1)" type="button" class="btn btn-outline-secondary border border-4">1</button></div>
+            <div class="col-3"><button onclick="displaydata(2)" type="button" class="btn btn-outline-secondary border border-4">2</button></div>
+            <div class="col-3"><button onclick="displaydata(3)" type="button" class="btn btn-outline-secondary border border-4">3</button></div>
+            <div class="col-3"><button onclick="displaydata('-')" type="button" class="btn btn-outline-secondary border border-4">-</button></div>
         </div>
 
         <div class="row mt-4 ms-1">
-            <div class="col-3"><button type="button" class="btn btn-outline-danger pe-3 ps-3 text-center">AC</button></div>
-            <div class="col-3"><button type="button" class="btn btn-outline-secondary">0</button></div>
-            <div class="col-3"><button type="button" class="btn btn-outline-warning pe-3 ps-3">&#9003;</button></div>
-            <div class="col-3"><button type="button" class="btn btn-outline-secondary">+</button></div>
+            <div class="col-3"><button onclick="allclear()" type="button" class="btn btn-outline-danger pe-3 ps-3 text-center border border-4">AC</button></div>
+            <div class="col-3"><button onclick="displaydata(0)" type="button" class="btn btn-outline-secondary border border-4">0</button></div>
+            <div class="col-3"><button onclick="backspace()" type="button" class="btn btn-outline-warning pe-3 ps-3 border border-4 border border-4">&#9003;</button></div>
+            <div class="col-3"><button onclick="displaydata('+')" type="button" class="btn btn-outline-secondary border border-4">+</button></div>
         </div>
         <div class=" mt-5  mb-4 text-center">
-            <div><button  class="container btn btn-outline-primary w-100 ">=</button></div>
+            <div><button onclick="equalto()" type="submit" class="container btn btn-outline-primary w-100 ">=</button></div>
 
         </div>
 
     </div>
 </body>
+
+<script src="./calc.js"></script>
 </html>
